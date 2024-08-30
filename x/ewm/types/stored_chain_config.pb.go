@@ -195,7 +195,7 @@ func (m *StoredChainConfig) GetBridgeTxDayFreq() int32 {
 }
 
 func init() {
-	proto.RegisterType((*StoredChainConfig)(nil), "covalenthq.ewm.ewm.StoredChainConfig")
+	proto.RegisterType((*StoredChainConfig)(nil), "covalenthq.covenet.covenet.StoredChainConfig")
 }
 
 func init() { proto.RegisterFile("ewm/stored_chain_config.proto", fileDescriptor_d1c08a6ad1a7da5a) }

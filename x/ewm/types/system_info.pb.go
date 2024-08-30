@@ -107,7 +107,7 @@ func (m *SystemInfo) GetStoredSessionCount() uint64 {
 }
 
 func init() {
-	proto.RegisterType((*SystemInfo)(nil), "covalenthq.ewm.ewm.SystemInfo")
+	proto.RegisterType((*SystemInfo)(nil), "covalenthq.covenet.covenet.SystemInfo")
 }
 
 func init() { proto.RegisterFile("ewm/system_info.proto", fileDescriptor_0dce67b0ae92c492) }

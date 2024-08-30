@@ -179,7 +179,7 @@ func (m *LiveProofSession) GetAfterIndex() string {
 }
 
 func init() {
-	proto.RegisterType((*LiveProofSession)(nil), "covalenthq.ewm.ewm.LiveProofSession")
+	proto.RegisterType((*LiveProofSession)(nil), "covalenthq.covenet.covenet.LiveProofSession")
 }
 
 func init() { proto.RegisterFile("ewm/live_proof_session.proto", fileDescriptor_f32fe21822b8fc36) }

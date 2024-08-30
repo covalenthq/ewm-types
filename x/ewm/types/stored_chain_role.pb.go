@@ -139,9 +139,9 @@ func (m *StoredChainRole) GetTimestamp() string {
 }
 
 func init() {
-	proto.RegisterType((*StoredChainRole)(nil), "covalenthq.ewm.ewm.StoredChainRole")
-	proto.RegisterMapType((map[string]string)(nil), "covalenthq.ewm.ewm.StoredChainRole.OpValPairEntry")
-	proto.RegisterMapType((map[string]bool)(nil), "covalenthq.ewm.ewm.StoredChainRole.ValidatorStatusEntry")
+	proto.RegisterType((*StoredChainRole)(nil), "covalenthq.covenet.covenet.StoredChainRole")
+	proto.RegisterMapType((map[string]string)(nil), "covalenthq.covenet.covenet.StoredChainRole.OpValPairEntry")
+	proto.RegisterMapType((map[string]bool)(nil), "covalenthq.covenet.covenet.StoredChainRole.ValidatorStatusEntry")
 }
 
 func init() { proto.RegisterFile("ewm/stored_chain_role.proto", fileDescriptor_8172ed37ca41bfed) }

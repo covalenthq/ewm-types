@@ -155,7 +155,7 @@ func (m *StoredProofSession) GetCreator() string {
 }
 
 func init() {
-	proto.RegisterType((*StoredProofSession)(nil), "covalenthq.ewm.ewm.StoredProofSession")
+	proto.RegisterType((*StoredProofSession)(nil), "covalenthq.covenet.covenet.StoredProofSession")
 }
 
 func init() {

@@ -60,7 +60,7 @@ func (m *Params) XXX_DiscardUnknown() {
 var xxx_messageInfo_Params proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Params)(nil), "covalenthq.ewm.ewm.Params")
+	proto.RegisterType((*Params)(nil), "covalenthq.covenet.covenet.Params")
 }
 
 func init() { proto.RegisterFile("ewm/params.proto", fileDescriptor_4651b62939340212) }

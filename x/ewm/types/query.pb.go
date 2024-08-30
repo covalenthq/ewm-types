@@ -930,26 +930,26 @@ func (m *QueryAllStoredProofSessionResponse) GetPagination() *query.PageResponse
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "covalenthq.ewm.ewm.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "covalenthq.ewm.ewm.QueryParamsResponse")
-	proto.RegisterType((*QueryGetSystemInfoRequest)(nil), "covalenthq.ewm.ewm.QueryGetSystemInfoRequest")
-	proto.RegisterType((*QueryGetSystemInfoResponse)(nil), "covalenthq.ewm.ewm.QueryGetSystemInfoResponse")
-	proto.RegisterType((*QueryGetLiveProofSessionRequest)(nil), "covalenthq.ewm.ewm.QueryGetLiveProofSessionRequest")
-	proto.RegisterType((*QueryGetLiveProofSessionResponse)(nil), "covalenthq.ewm.ewm.QueryGetLiveProofSessionResponse")
-	proto.RegisterType((*QueryAllLiveProofSessionRequest)(nil), "covalenthq.ewm.ewm.QueryAllLiveProofSessionRequest")
-	proto.RegisterType((*QueryAllLiveProofSessionResponse)(nil), "covalenthq.ewm.ewm.QueryAllLiveProofSessionResponse")
-	proto.RegisterType((*QueryGetStoredChainRoleRequest)(nil), "covalenthq.ewm.ewm.QueryGetStoredChainRoleRequest")
-	proto.RegisterType((*QueryGetStoredChainRoleResponse)(nil), "covalenthq.ewm.ewm.QueryGetStoredChainRoleResponse")
-	proto.RegisterType((*QueryAllStoredChainRoleRequest)(nil), "covalenthq.ewm.ewm.QueryAllStoredChainRoleRequest")
-	proto.RegisterType((*QueryAllStoredChainRoleResponse)(nil), "covalenthq.ewm.ewm.QueryAllStoredChainRoleResponse")
-	proto.RegisterType((*QueryGetStoredChainConfigRequest)(nil), "covalenthq.ewm.ewm.QueryGetStoredChainConfigRequest")
-	proto.RegisterType((*QueryGetStoredChainConfigResponse)(nil), "covalenthq.ewm.ewm.QueryGetStoredChainConfigResponse")
-	proto.RegisterType((*QueryAllStoredChainConfigRequest)(nil), "covalenthq.ewm.ewm.QueryAllStoredChainConfigRequest")
-	proto.RegisterType((*QueryAllStoredChainConfigResponse)(nil), "covalenthq.ewm.ewm.QueryAllStoredChainConfigResponse")
-	proto.RegisterType((*QueryGetStoredProofSessionRequest)(nil), "covalenthq.ewm.ewm.QueryGetStoredProofSessionRequest")
-	proto.RegisterType((*QueryGetStoredProofSessionResponse)(nil), "covalenthq.ewm.ewm.QueryGetStoredProofSessionResponse")
-	proto.RegisterType((*QueryAllStoredProofSessionRequest)(nil), "covalenthq.ewm.ewm.QueryAllStoredProofSessionRequest")
-	proto.RegisterType((*QueryAllStoredProofSessionResponse)(nil), "covalenthq.ewm.ewm.QueryAllStoredProofSessionResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "covalenthq.covenet.covenet.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "covalenthq.covenet.covenet.QueryParamsResponse")
+	proto.RegisterType((*QueryGetSystemInfoRequest)(nil), "covalenthq.covenet.covenet.QueryGetSystemInfoRequest")
+	proto.RegisterType((*QueryGetSystemInfoResponse)(nil), "covalenthq.covenet.covenet.QueryGetSystemInfoResponse")
+	proto.RegisterType((*QueryGetLiveProofSessionRequest)(nil), "covalenthq.covenet.covenet.QueryGetLiveProofSessionRequest")
+	proto.RegisterType((*QueryGetLiveProofSessionResponse)(nil), "covalenthq.covenet.covenet.QueryGetLiveProofSessionResponse")
+	proto.RegisterType((*QueryAllLiveProofSessionRequest)(nil), "covalenthq.covenet.covenet.QueryAllLiveProofSessionRequest")
+	proto.RegisterType((*QueryAllLiveProofSessionResponse)(nil), "covalenthq.covenet.covenet.QueryAllLiveProofSessionResponse")
+	proto.RegisterType((*QueryGetStoredChainRoleRequest)(nil), "covalenthq.covenet.covenet.QueryGetStoredChainRoleRequest")
+	proto.RegisterType((*QueryGetStoredChainRoleResponse)(nil), "covalenthq.covenet.covenet.QueryGetStoredChainRoleResponse")
+	proto.RegisterType((*QueryAllStoredChainRoleRequest)(nil), "covalenthq.covenet.covenet.QueryAllStoredChainRoleRequest")
+	proto.RegisterType((*QueryAllStoredChainRoleResponse)(nil), "covalenthq.covenet.covenet.QueryAllStoredChainRoleResponse")
+	proto.RegisterType((*QueryGetStoredChainConfigRequest)(nil), "covalenthq.covenet.covenet.QueryGetStoredChainConfigRequest")
+	proto.RegisterType((*QueryGetStoredChainConfigResponse)(nil), "covalenthq.covenet.covenet.QueryGetStoredChainConfigResponse")
+	proto.RegisterType((*QueryAllStoredChainConfigRequest)(nil), "covalenthq.covenet.covenet.QueryAllStoredChainConfigRequest")
+	proto.RegisterType((*QueryAllStoredChainConfigResponse)(nil), "covalenthq.covenet.covenet.QueryAllStoredChainConfigResponse")
+	proto.RegisterType((*QueryGetStoredProofSessionRequest)(nil), "covalenthq.covenet.covenet.QueryGetStoredProofSessionRequest")
+	proto.RegisterType((*QueryGetStoredProofSessionResponse)(nil), "covalenthq.covenet.covenet.QueryGetStoredProofSessionResponse")
+	proto.RegisterType((*QueryAllStoredProofSessionRequest)(nil), "covalenthq.covenet.covenet.QueryAllStoredProofSessionRequest")
+	proto.RegisterType((*QueryAllStoredProofSessionResponse)(nil), "covalenthq.covenet.covenet.QueryAllStoredProofSessionResponse")
 }
 
 func init() { proto.RegisterFile("ewm/query.proto", fileDescriptor_d8bb227319b4ba40) }
@@ -1064,7 +1064,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1073,7 +1073,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) SystemInfo(ctx context.Context, in *QueryGetSystemInfoRequest, opts ...grpc.CallOption) (*QueryGetSystemInfoResponse, error) {
 	out := new(QueryGetSystemInfoResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/SystemInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/SystemInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1082,7 +1082,7 @@ func (c *queryClient) SystemInfo(ctx context.Context, in *QueryGetSystemInfoRequ
 
 func (c *queryClient) LiveProofSession(ctx context.Context, in *QueryGetLiveProofSessionRequest, opts ...grpc.CallOption) (*QueryGetLiveProofSessionResponse, error) {
 	out := new(QueryGetLiveProofSessionResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/LiveProofSession", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/LiveProofSession", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1091,7 +1091,7 @@ func (c *queryClient) LiveProofSession(ctx context.Context, in *QueryGetLiveProo
 
 func (c *queryClient) LiveProofSessionAll(ctx context.Context, in *QueryAllLiveProofSessionRequest, opts ...grpc.CallOption) (*QueryAllLiveProofSessionResponse, error) {
 	out := new(QueryAllLiveProofSessionResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/LiveProofSessionAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/LiveProofSessionAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1100,7 +1100,7 @@ func (c *queryClient) LiveProofSessionAll(ctx context.Context, in *QueryAllLiveP
 
 func (c *queryClient) StoredChainRole(ctx context.Context, in *QueryGetStoredChainRoleRequest, opts ...grpc.CallOption) (*QueryGetStoredChainRoleResponse, error) {
 	out := new(QueryGetStoredChainRoleResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/StoredChainRole", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/StoredChainRole", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1109,7 +1109,7 @@ func (c *queryClient) StoredChainRole(ctx context.Context, in *QueryGetStoredCha
 
 func (c *queryClient) StoredChainRoleAll(ctx context.Context, in *QueryAllStoredChainRoleRequest, opts ...grpc.CallOption) (*QueryAllStoredChainRoleResponse, error) {
 	out := new(QueryAllStoredChainRoleResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/StoredChainRoleAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/StoredChainRoleAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1118,7 +1118,7 @@ func (c *queryClient) StoredChainRoleAll(ctx context.Context, in *QueryAllStored
 
 func (c *queryClient) StoredChainConfig(ctx context.Context, in *QueryGetStoredChainConfigRequest, opts ...grpc.CallOption) (*QueryGetStoredChainConfigResponse, error) {
 	out := new(QueryGetStoredChainConfigResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/StoredChainConfig", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/StoredChainConfig", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1127,7 +1127,7 @@ func (c *queryClient) StoredChainConfig(ctx context.Context, in *QueryGetStoredC
 
 func (c *queryClient) StoredChainConfigAll(ctx context.Context, in *QueryAllStoredChainConfigRequest, opts ...grpc.CallOption) (*QueryAllStoredChainConfigResponse, error) {
 	out := new(QueryAllStoredChainConfigResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/StoredChainConfigAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/StoredChainConfigAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1136,7 +1136,7 @@ func (c *queryClient) StoredChainConfigAll(ctx context.Context, in *QueryAllStor
 
 func (c *queryClient) StoredProofSession(ctx context.Context, in *QueryGetStoredProofSessionRequest, opts ...grpc.CallOption) (*QueryGetStoredProofSessionResponse, error) {
 	out := new(QueryGetStoredProofSessionResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/StoredProofSession", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/StoredProofSession", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1145,7 +1145,7 @@ func (c *queryClient) StoredProofSession(ctx context.Context, in *QueryGetStored
 
 func (c *queryClient) StoredProofSessionAll(ctx context.Context, in *QueryAllStoredProofSessionRequest, opts ...grpc.CallOption) (*QueryAllStoredProofSessionResponse, error) {
 	out := new(QueryAllStoredProofSessionResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Query/StoredProofSessionAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Query/StoredProofSessionAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1225,7 +1225,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/Params",
+		FullMethod: "/covalenthq.covenet.covenet.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -1243,7 +1243,7 @@ func _Query_SystemInfo_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/SystemInfo",
+		FullMethod: "/covalenthq.covenet.covenet.Query/SystemInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SystemInfo(ctx, req.(*QueryGetSystemInfoRequest))
@@ -1261,7 +1261,7 @@ func _Query_LiveProofSession_Handler(srv interface{}, ctx context.Context, dec f
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/LiveProofSession",
+		FullMethod: "/covalenthq.covenet.covenet.Query/LiveProofSession",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).LiveProofSession(ctx, req.(*QueryGetLiveProofSessionRequest))
@@ -1279,7 +1279,7 @@ func _Query_LiveProofSessionAll_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/LiveProofSessionAll",
+		FullMethod: "/covalenthq.covenet.covenet.Query/LiveProofSessionAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).LiveProofSessionAll(ctx, req.(*QueryAllLiveProofSessionRequest))
@@ -1297,7 +1297,7 @@ func _Query_StoredChainRole_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/StoredChainRole",
+		FullMethod: "/covalenthq.covenet.covenet.Query/StoredChainRole",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredChainRole(ctx, req.(*QueryGetStoredChainRoleRequest))
@@ -1315,7 +1315,7 @@ func _Query_StoredChainRoleAll_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/StoredChainRoleAll",
+		FullMethod: "/covalenthq.covenet.covenet.Query/StoredChainRoleAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredChainRoleAll(ctx, req.(*QueryAllStoredChainRoleRequest))
@@ -1333,7 +1333,7 @@ func _Query_StoredChainConfig_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/StoredChainConfig",
+		FullMethod: "/covalenthq.covenet.covenet.Query/StoredChainConfig",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredChainConfig(ctx, req.(*QueryGetStoredChainConfigRequest))
@@ -1351,7 +1351,7 @@ func _Query_StoredChainConfigAll_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/StoredChainConfigAll",
+		FullMethod: "/covalenthq.covenet.covenet.Query/StoredChainConfigAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredChainConfigAll(ctx, req.(*QueryAllStoredChainConfigRequest))
@@ -1369,7 +1369,7 @@ func _Query_StoredProofSession_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/StoredProofSession",
+		FullMethod: "/covalenthq.covenet.covenet.Query/StoredProofSession",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredProofSession(ctx, req.(*QueryGetStoredProofSessionRequest))
@@ -1387,7 +1387,7 @@ func _Query_StoredProofSessionAll_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Query/StoredProofSessionAll",
+		FullMethod: "/covalenthq.covenet.covenet.Query/StoredProofSessionAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredProofSessionAll(ctx, req.(*QueryAllStoredProofSessionRequest))
@@ -1396,7 +1396,7 @@ func _Query_StoredProofSessionAll_Handler(srv interface{}, ctx context.Context, 
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "covalenthq.ewm.ewm.Query",
+	ServiceName: "covalenthq.covenet.covenet.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -109,7 +109,7 @@ func (m *GenesisState) GetStoredProofSessionList() []StoredProofSession {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "covalenthq.ewm.ewm.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "covalenthq.covenet.covenet.GenesisState")
 }
 
 func init() { proto.RegisterFile("ewm/genesis.proto", fileDescriptor_c709d6f3d639f0eb) }

@@ -1804,34 +1804,34 @@ func (m *MsgAssignOperatorValidatorResponse) GetOperatorIndex() int32 {
 }
 
 func init() {
-	proto.RegisterType((*MsgCreateProof)(nil), "covalenthq.ewm.ewm.MsgCreateProof")
-	proto.RegisterType((*MsgCreateProofResponse)(nil), "covalenthq.ewm.ewm.MsgCreateProofResponse")
-	proto.RegisterType((*MsgAssignProofSequencer)(nil), "covalenthq.ewm.ewm.MsgAssignProofSequencer")
-	proto.RegisterType((*MsgAssignProofSequencerResponse)(nil), "covalenthq.ewm.ewm.MsgAssignProofSequencerResponse")
-	proto.RegisterType((*MsgAssignProofOperator)(nil), "covalenthq.ewm.ewm.MsgAssignProofOperator")
-	proto.RegisterType((*MsgAssignProofOperatorResponse)(nil), "covalenthq.ewm.ewm.MsgAssignProofOperatorResponse")
-	proto.RegisterType((*MsgAssignProofValidator)(nil), "covalenthq.ewm.ewm.MsgAssignProofValidator")
-	proto.RegisterType((*MsgAssignProofValidatorResponse)(nil), "covalenthq.ewm.ewm.MsgAssignProofValidatorResponse")
-	proto.RegisterType((*MsgInitChainRole)(nil), "covalenthq.ewm.ewm.MsgInitChainRole")
-	proto.RegisterType((*MsgInitChainRoleResponse)(nil), "covalenthq.ewm.ewm.MsgInitChainRoleResponse")
-	proto.RegisterType((*MsgInitChainConfig)(nil), "covalenthq.ewm.ewm.MsgInitChainConfig")
-	proto.RegisterType((*MsgInitChainConfigResponse)(nil), "covalenthq.ewm.ewm.MsgInitChainConfigResponse")
-	proto.RegisterType((*MsgRemoveProofOperator)(nil), "covalenthq.ewm.ewm.MsgRemoveProofOperator")
-	proto.RegisterType((*MsgRemoveProofOperatorResponse)(nil), "covalenthq.ewm.ewm.MsgRemoveProofOperatorResponse")
-	proto.RegisterType((*MsgRemoveProofSequencer)(nil), "covalenthq.ewm.ewm.MsgRemoveProofSequencer")
-	proto.RegisterType((*MsgRemoveProofSequencerResponse)(nil), "covalenthq.ewm.ewm.MsgRemoveProofSequencerResponse")
-	proto.RegisterType((*MsgRemoveProofValidator)(nil), "covalenthq.ewm.ewm.MsgRemoveProofValidator")
-	proto.RegisterType((*MsgRemoveProofValidatorResponse)(nil), "covalenthq.ewm.ewm.MsgRemoveProofValidatorResponse")
-	proto.RegisterType((*MsgUpdateChainProofConfig)(nil), "covalenthq.ewm.ewm.MsgUpdateChainProofConfig")
-	proto.RegisterType((*MsgUpdateChainProofConfigResponse)(nil), "covalenthq.ewm.ewm.MsgUpdateChainProofConfigResponse")
-	proto.RegisterType((*MsgUpdateChainSyncConfig)(nil), "covalenthq.ewm.ewm.MsgUpdateChainSyncConfig")
-	proto.RegisterType((*MsgUpdateChainSyncConfigResponse)(nil), "covalenthq.ewm.ewm.MsgUpdateChainSyncConfigResponse")
-	proto.RegisterType((*MsgEnableProofValidator)(nil), "covalenthq.ewm.ewm.MsgEnableProofValidator")
-	proto.RegisterType((*MsgEnableProofValidatorResponse)(nil), "covalenthq.ewm.ewm.MsgEnableProofValidatorResponse")
-	proto.RegisterType((*MsgDisableProofValidator)(nil), "covalenthq.ewm.ewm.MsgDisableProofValidator")
-	proto.RegisterType((*MsgDisableProofValidatorResponse)(nil), "covalenthq.ewm.ewm.MsgDisableProofValidatorResponse")
-	proto.RegisterType((*MsgAssignOperatorValidator)(nil), "covalenthq.ewm.ewm.MsgAssignOperatorValidator")
-	proto.RegisterType((*MsgAssignOperatorValidatorResponse)(nil), "covalenthq.ewm.ewm.MsgAssignOperatorValidatorResponse")
+	proto.RegisterType((*MsgCreateProof)(nil), "covalenthq.covenet.covenet.MsgCreateProof")
+	proto.RegisterType((*MsgCreateProofResponse)(nil), "covalenthq.covenet.covenet.MsgCreateProofResponse")
+	proto.RegisterType((*MsgAssignProofSequencer)(nil), "covalenthq.covenet.covenet.MsgAssignProofSequencer")
+	proto.RegisterType((*MsgAssignProofSequencerResponse)(nil), "covalenthq.covenet.covenet.MsgAssignProofSequencerResponse")
+	proto.RegisterType((*MsgAssignProofOperator)(nil), "covalenthq.covenet.covenet.MsgAssignProofOperator")
+	proto.RegisterType((*MsgAssignProofOperatorResponse)(nil), "covalenthq.covenet.covenet.MsgAssignProofOperatorResponse")
+	proto.RegisterType((*MsgAssignProofValidator)(nil), "covalenthq.covenet.covenet.MsgAssignProofValidator")
+	proto.RegisterType((*MsgAssignProofValidatorResponse)(nil), "covalenthq.covenet.covenet.MsgAssignProofValidatorResponse")
+	proto.RegisterType((*MsgInitChainRole)(nil), "covalenthq.covenet.covenet.MsgInitChainRole")
+	proto.RegisterType((*MsgInitChainRoleResponse)(nil), "covalenthq.covenet.covenet.MsgInitChainRoleResponse")
+	proto.RegisterType((*MsgInitChainConfig)(nil), "covalenthq.covenet.covenet.MsgInitChainConfig")
+	proto.RegisterType((*MsgInitChainConfigResponse)(nil), "covalenthq.covenet.covenet.MsgInitChainConfigResponse")
+	proto.RegisterType((*MsgRemoveProofOperator)(nil), "covalenthq.covenet.covenet.MsgRemoveProofOperator")
+	proto.RegisterType((*MsgRemoveProofOperatorResponse)(nil), "covalenthq.covenet.covenet.MsgRemoveProofOperatorResponse")
+	proto.RegisterType((*MsgRemoveProofSequencer)(nil), "covalenthq.covenet.covenet.MsgRemoveProofSequencer")
+	proto.RegisterType((*MsgRemoveProofSequencerResponse)(nil), "covalenthq.covenet.covenet.MsgRemoveProofSequencerResponse")
+	proto.RegisterType((*MsgRemoveProofValidator)(nil), "covalenthq.covenet.covenet.MsgRemoveProofValidator")
+	proto.RegisterType((*MsgRemoveProofValidatorResponse)(nil), "covalenthq.covenet.covenet.MsgRemoveProofValidatorResponse")
+	proto.RegisterType((*MsgUpdateChainProofConfig)(nil), "covalenthq.covenet.covenet.MsgUpdateChainProofConfig")
+	proto.RegisterType((*MsgUpdateChainProofConfigResponse)(nil), "covalenthq.covenet.covenet.MsgUpdateChainProofConfigResponse")
+	proto.RegisterType((*MsgUpdateChainSyncConfig)(nil), "covalenthq.covenet.covenet.MsgUpdateChainSyncConfig")
+	proto.RegisterType((*MsgUpdateChainSyncConfigResponse)(nil), "covalenthq.covenet.covenet.MsgUpdateChainSyncConfigResponse")
+	proto.RegisterType((*MsgEnableProofValidator)(nil), "covalenthq.covenet.covenet.MsgEnableProofValidator")
+	proto.RegisterType((*MsgEnableProofValidatorResponse)(nil), "covalenthq.covenet.covenet.MsgEnableProofValidatorResponse")
+	proto.RegisterType((*MsgDisableProofValidator)(nil), "covalenthq.covenet.covenet.MsgDisableProofValidator")
+	proto.RegisterType((*MsgDisableProofValidatorResponse)(nil), "covalenthq.covenet.covenet.MsgDisableProofValidatorResponse")
+	proto.RegisterType((*MsgAssignOperatorValidator)(nil), "covalenthq.covenet.covenet.MsgAssignOperatorValidator")
+	proto.RegisterType((*MsgAssignOperatorValidatorResponse)(nil), "covalenthq.covenet.covenet.MsgAssignOperatorValidatorResponse")
 }
 
 func init() { proto.RegisterFile("ewm/tx.proto", fileDescriptor_f0b19c85b485ebed) }
@@ -1951,7 +1951,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) CreateProof(ctx context.Context, in *MsgCreateProof, opts ...grpc.CallOption) (*MsgCreateProofResponse, error) {
 	out := new(MsgCreateProofResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/CreateProof", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/CreateProof", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1960,7 +1960,7 @@ func (c *msgClient) CreateProof(ctx context.Context, in *MsgCreateProof, opts ..
 
 func (c *msgClient) AssignProofOperator(ctx context.Context, in *MsgAssignProofOperator, opts ...grpc.CallOption) (*MsgAssignProofOperatorResponse, error) {
 	out := new(MsgAssignProofOperatorResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/AssignProofOperator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/AssignProofOperator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1969,7 +1969,7 @@ func (c *msgClient) AssignProofOperator(ctx context.Context, in *MsgAssignProofO
 
 func (c *msgClient) AssignProofValidator(ctx context.Context, in *MsgAssignProofValidator, opts ...grpc.CallOption) (*MsgAssignProofValidatorResponse, error) {
 	out := new(MsgAssignProofValidatorResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/AssignProofValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/AssignProofValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1978,7 +1978,7 @@ func (c *msgClient) AssignProofValidator(ctx context.Context, in *MsgAssignProof
 
 func (c *msgClient) AssignProofSequencer(ctx context.Context, in *MsgAssignProofSequencer, opts ...grpc.CallOption) (*MsgAssignProofSequencerResponse, error) {
 	out := new(MsgAssignProofSequencerResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/AssignProofSequencer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/AssignProofSequencer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1987,7 +1987,7 @@ func (c *msgClient) AssignProofSequencer(ctx context.Context, in *MsgAssignProof
 
 func (c *msgClient) InitChainRole(ctx context.Context, in *MsgInitChainRole, opts ...grpc.CallOption) (*MsgInitChainRoleResponse, error) {
 	out := new(MsgInitChainRoleResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/InitChainRole", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/InitChainRole", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1996,7 +1996,7 @@ func (c *msgClient) InitChainRole(ctx context.Context, in *MsgInitChainRole, opt
 
 func (c *msgClient) InitChainConfig(ctx context.Context, in *MsgInitChainConfig, opts ...grpc.CallOption) (*MsgInitChainConfigResponse, error) {
 	out := new(MsgInitChainConfigResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/InitChainConfig", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/InitChainConfig", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2005,7 +2005,7 @@ func (c *msgClient) InitChainConfig(ctx context.Context, in *MsgInitChainConfig,
 
 func (c *msgClient) RemoveProofOperator(ctx context.Context, in *MsgRemoveProofOperator, opts ...grpc.CallOption) (*MsgRemoveProofOperatorResponse, error) {
 	out := new(MsgRemoveProofOperatorResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/RemoveProofOperator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/RemoveProofOperator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2014,7 +2014,7 @@ func (c *msgClient) RemoveProofOperator(ctx context.Context, in *MsgRemoveProofO
 
 func (c *msgClient) RemoveProofSequencer(ctx context.Context, in *MsgRemoveProofSequencer, opts ...grpc.CallOption) (*MsgRemoveProofSequencerResponse, error) {
 	out := new(MsgRemoveProofSequencerResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/RemoveProofSequencer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/RemoveProofSequencer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2023,7 +2023,7 @@ func (c *msgClient) RemoveProofSequencer(ctx context.Context, in *MsgRemoveProof
 
 func (c *msgClient) RemoveProofValidator(ctx context.Context, in *MsgRemoveProofValidator, opts ...grpc.CallOption) (*MsgRemoveProofValidatorResponse, error) {
 	out := new(MsgRemoveProofValidatorResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/RemoveProofValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/RemoveProofValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2032,7 +2032,7 @@ func (c *msgClient) RemoveProofValidator(ctx context.Context, in *MsgRemoveProof
 
 func (c *msgClient) UpdateChainProofConfig(ctx context.Context, in *MsgUpdateChainProofConfig, opts ...grpc.CallOption) (*MsgUpdateChainProofConfigResponse, error) {
 	out := new(MsgUpdateChainProofConfigResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/UpdateChainProofConfig", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/UpdateChainProofConfig", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2041,7 +2041,7 @@ func (c *msgClient) UpdateChainProofConfig(ctx context.Context, in *MsgUpdateCha
 
 func (c *msgClient) UpdateChainSyncConfig(ctx context.Context, in *MsgUpdateChainSyncConfig, opts ...grpc.CallOption) (*MsgUpdateChainSyncConfigResponse, error) {
 	out := new(MsgUpdateChainSyncConfigResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/UpdateChainSyncConfig", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/UpdateChainSyncConfig", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2050,7 +2050,7 @@ func (c *msgClient) UpdateChainSyncConfig(ctx context.Context, in *MsgUpdateChai
 
 func (c *msgClient) EnableProofValidator(ctx context.Context, in *MsgEnableProofValidator, opts ...grpc.CallOption) (*MsgEnableProofValidatorResponse, error) {
 	out := new(MsgEnableProofValidatorResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/EnableProofValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/EnableProofValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2059,7 +2059,7 @@ func (c *msgClient) EnableProofValidator(ctx context.Context, in *MsgEnableProof
 
 func (c *msgClient) DisableProofValidator(ctx context.Context, in *MsgDisableProofValidator, opts ...grpc.CallOption) (*MsgDisableProofValidatorResponse, error) {
 	out := new(MsgDisableProofValidatorResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/DisableProofValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/DisableProofValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2068,7 +2068,7 @@ func (c *msgClient) DisableProofValidator(ctx context.Context, in *MsgDisablePro
 
 func (c *msgClient) AssignOperatorValidator(ctx context.Context, in *MsgAssignOperatorValidator, opts ...grpc.CallOption) (*MsgAssignOperatorValidatorResponse, error) {
 	out := new(MsgAssignOperatorValidatorResponse)
-	err := c.cc.Invoke(ctx, "/covalenthq.ewm.ewm.Msg/AssignOperatorValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/covalenthq.covenet.covenet.Msg/AssignOperatorValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2154,7 +2154,7 @@ func _Msg_CreateProof_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/CreateProof",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/CreateProof",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).CreateProof(ctx, req.(*MsgCreateProof))
@@ -2172,7 +2172,7 @@ func _Msg_AssignProofOperator_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/AssignProofOperator",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/AssignProofOperator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AssignProofOperator(ctx, req.(*MsgAssignProofOperator))
@@ -2190,7 +2190,7 @@ func _Msg_AssignProofValidator_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/AssignProofValidator",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/AssignProofValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AssignProofValidator(ctx, req.(*MsgAssignProofValidator))
@@ -2208,7 +2208,7 @@ func _Msg_AssignProofSequencer_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/AssignProofSequencer",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/AssignProofSequencer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AssignProofSequencer(ctx, req.(*MsgAssignProofSequencer))
@@ -2226,7 +2226,7 @@ func _Msg_InitChainRole_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/InitChainRole",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/InitChainRole",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).InitChainRole(ctx, req.(*MsgInitChainRole))
@@ -2244,7 +2244,7 @@ func _Msg_InitChainConfig_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/InitChainConfig",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/InitChainConfig",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).InitChainConfig(ctx, req.(*MsgInitChainConfig))
@@ -2262,7 +2262,7 @@ func _Msg_RemoveProofOperator_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/RemoveProofOperator",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/RemoveProofOperator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RemoveProofOperator(ctx, req.(*MsgRemoveProofOperator))
@@ -2280,7 +2280,7 @@ func _Msg_RemoveProofSequencer_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/RemoveProofSequencer",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/RemoveProofSequencer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RemoveProofSequencer(ctx, req.(*MsgRemoveProofSequencer))
@@ -2298,7 +2298,7 @@ func _Msg_RemoveProofValidator_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/RemoveProofValidator",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/RemoveProofValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RemoveProofValidator(ctx, req.(*MsgRemoveProofValidator))
@@ -2316,7 +2316,7 @@ func _Msg_UpdateChainProofConfig_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/UpdateChainProofConfig",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/UpdateChainProofConfig",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateChainProofConfig(ctx, req.(*MsgUpdateChainProofConfig))
@@ -2334,7 +2334,7 @@ func _Msg_UpdateChainSyncConfig_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/UpdateChainSyncConfig",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/UpdateChainSyncConfig",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateChainSyncConfig(ctx, req.(*MsgUpdateChainSyncConfig))
@@ -2352,7 +2352,7 @@ func _Msg_EnableProofValidator_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/EnableProofValidator",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/EnableProofValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).EnableProofValidator(ctx, req.(*MsgEnableProofValidator))
@@ -2370,7 +2370,7 @@ func _Msg_DisableProofValidator_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/DisableProofValidator",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/DisableProofValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).DisableProofValidator(ctx, req.(*MsgDisableProofValidator))
@@ -2388,7 +2388,7 @@ func _Msg_AssignOperatorValidator_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/covalenthq.ewm.ewm.Msg/AssignOperatorValidator",
+		FullMethod: "/covalenthq.covenet.covenet.Msg/AssignOperatorValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AssignOperatorValidator(ctx, req.(*MsgAssignOperatorValidator))
@@ -2397,7 +2397,7 @@ func _Msg_AssignOperatorValidator_Handler(srv interface{}, ctx context.Context, 
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "covalenthq.ewm.ewm.Msg",
+	ServiceName: "covalenthq.covenet.covenet.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
