@@ -1,20 +1,8 @@
 package app
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/std"
-	"github.com/tendermint/spn/x/monitoringp"
-
-	sdk "github.com/cosmos/cosmos-sdk/types"
-
-	errorsmod "cosmossdk.io/errors"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/cosmos/cosmos-sdk/x/auth/vesting"
 	authzmodule "github.com/cosmos/cosmos-sdk/x/authz/module"
@@ -43,6 +31,7 @@ import (
 	ibctransfertypes "github.com/cosmos/ibc-go/v5/modules/apps/transfer/types"
 	ibc "github.com/cosmos/ibc-go/v5/modules/core"
 	ibcclientclient "github.com/cosmos/ibc-go/v5/modules/core/02-client/client"
+	"github.com/tendermint/spn/x/monitoringp"
 )
 
 var (
