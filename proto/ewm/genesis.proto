@@ -1,0 +1,24 @@
+syntax = "proto3";
+package covalenthq.ewm.ewm;
+
+import "gogoproto/gogo.proto";
+import "ewm/params.proto";
+import "ewm/system_info.proto";
+import "ewm/live_proof_session.proto";
+import "ewm/stored_chain_role.proto";
+import "ewm/stored_chain_config.proto";
+import "ewm/stored_proof_session.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/covalenthq/ewm/x/ewm/types";
+
+// GenesisState defines the covenet module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  SystemInfo systemInfo = 2 [(gogoproto.nullable) = false];
+  repeated LiveProofSession liveProofSessionList = 3 [(gogoproto.nullable) = false];
+  repeated StoredChainRole storedChainRoleList = 4 [(gogoproto.nullable) = false];
+  repeated StoredChainConfig storedChainConfigList = 5 [(gogoproto.nullable) = false];
+  repeated StoredProofSession storedProofSessionList = 6 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

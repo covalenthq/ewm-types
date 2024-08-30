@@ -1,0 +1,18 @@
+syntax = "proto3";
+package covalenthq.ewm.ewm;
+
+option go_package = "github.com/covalenthq/ewm/x/ewm/types";
+
+message StoredChainRole {
+  string index = 1; 
+  int32 chainId = 2; 
+  string proofSequencer = 3; 
+  string proofOperator = 4; 
+  string proofValidator = 5; 
+  string proofType = 6;  
+  string creator = 7;
+  map<string, bool> validatorStatus = 8;
+  map<string, string> opValPair = 9;
+  string timestamp = 10;
+}
+

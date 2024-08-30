@@ -1,0 +1,13 @@
+syntax = "proto3";
+package covalenthq.ewm.ewm;
+
+option go_package = "github.com/covalenthq/ewm/x/ewm/types";
+
+message SystemInfo {
+  uint64 proofSessionId = 1; 
+  uint64 chainRoleId = 2;
+  string fifoHeadIndex = 3;
+  string fifoTailIndex = 4;
+  uint64 chainConfigId = 5;
+  uint64 storedSessionCount = 6;
+}

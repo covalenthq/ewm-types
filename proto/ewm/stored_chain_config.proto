@@ -1,0 +1,25 @@
+syntax = "proto3";
+package covalenthq.ewm.ewm;
+
+option go_package = "github.com/covalenthq/ewm/x/ewm/types";
+
+message StoredChainConfig {
+  string index = 1; 
+  int32 chainId = 2; 
+  string proofType = 3; 
+  string srcBlockTimeSec = 4; 
+  string snkBlockTimeSec = 5; 
+  int32 quorumReq = 6; 
+  string rewardAlloc = 7; 
+  string minStakeReq = 8; 
+  int32 minSubmissionsReq = 9; 
+  string sessionTimeSec = 10; 
+  string creator = 11; 
+  bool liveMode = 12; 
+  uint64 syncBlockLimit = 13; 
+  string timestamp = 14;
+  uint64 syncLagLimit = 15;
+  uint64 syncBlockStart = 16;
+  int32 bridgeTxDayFreq = 17;
+}
+

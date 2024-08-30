@@ -1,0 +1,21 @@
+syntax = "proto3";
+package covalenthq.ewm.ewm;
+
+option go_package = "github.com/covalenthq/ewm/x/ewm/types";
+
+message StoredProofSession {
+  string index = 1; 
+  int32 chainId = 2; 
+  string proofType = 3; 
+  uint64 blockHeight = 4; 
+  string blockHash = 5; 
+  string proofHash = 6; 
+  string storeAddress = 7; 
+  int32 proofCount = 8; 
+  string sessionMembers = 9; 
+  string archivedTimestamp = 10; 
+  bool finalized = 11; 
+  string creator = 12; 
+  
+}
+

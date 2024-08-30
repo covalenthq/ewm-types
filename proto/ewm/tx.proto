@@ -1,0 +1,207 @@
+syntax = "proto3";
+package covalenthq.ewm.ewm;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "github.com/covalenthq/ewm/x/ewm/types";
+
+// Msg defines the Msg service.
+service Msg {
+  rpc CreateProof(MsgCreateProof) returns (MsgCreateProofResponse);
+  rpc AssignProofOperator(MsgAssignProofOperator) returns (MsgAssignProofOperatorResponse);
+  rpc AssignProofValidator(MsgAssignProofValidator) returns (MsgAssignProofValidatorResponse);
+  rpc AssignProofSequencer(MsgAssignProofSequencer) returns (MsgAssignProofSequencerResponse);
+  rpc InitChainRole(MsgInitChainRole) returns (MsgInitChainRoleResponse);
+  rpc InitChainConfig(MsgInitChainConfig) returns (MsgInitChainConfigResponse);
+  rpc RemoveProofOperator(MsgRemoveProofOperator) returns (MsgRemoveProofOperatorResponse);
+  rpc RemoveProofSequencer(MsgRemoveProofSequencer) returns (MsgRemoveProofSequencerResponse);
+  rpc RemoveProofValidator(MsgRemoveProofValidator) returns (MsgRemoveProofValidatorResponse);
+  rpc UpdateChainProofConfig(MsgUpdateChainProofConfig) returns (MsgUpdateChainProofConfigResponse);
+  rpc UpdateChainSyncConfig(MsgUpdateChainSyncConfig) returns (MsgUpdateChainSyncConfigResponse);
+  rpc EnableProofValidator(MsgEnableProofValidator) returns (MsgEnableProofValidatorResponse);
+  rpc DisableProofValidator(MsgDisableProofValidator) returns (MsgDisableProofValidatorResponse);
+  rpc AssignOperatorValidator(MsgAssignOperatorValidator) returns (MsgAssignOperatorValidatorResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgCreateProof {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofType = 3;
+  uint64 blockHeight = 4;
+  string blockHash = 5;
+  string proofHash = 6;
+  string storeAddress = 7;
+}
+
+message MsgCreateProofResponse {
+  string proofIndex = 1;
+}
+
+message MsgAssignProofSequencer {
+  string creator = 1;
+  int32 chainId = 2;
+  string sequencerAddress = 3;
+  string proofType = 4;
+}
+
+message MsgAssignProofSequencerResponse {
+  string sequencerIndex = 1;
+}
+
+message MsgAssignProofOperator {
+  string creator = 1;
+  int32 chainId = 2;
+  string operatorAddress = 3;
+  string proofType = 4;
+}
+
+message MsgAssignProofOperatorResponse {
+  string operatorIndex = 1;
+}
+
+message MsgAssignProofValidator {
+  string creator = 1;
+  int32 chainId = 2;
+  string validatorAddress = 3;
+  string proofType = 4;
+}
+
+message MsgAssignProofValidatorResponse {
+  string validatorIndex = 1;
+}
+
+message MsgInitChainRole {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofSequencer = 3;
+  string proofOperator = 4;
+  string proofValidator = 5;
+  string proofType = 6;
+}
+
+message MsgInitChainRoleResponse {
+  string chainRoleIndex = 1;
+}
+
+message MsgInitChainConfig {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofType = 3;
+  string srcBlockTimeSec = 4;
+  string snkBlockTimeSec = 5;
+  int32 quorumReq = 6;
+  string rewardAlloc = 7;
+  string minStakeReq = 8;
+  int32 minSubmissionsReq = 9;
+  string sessionTimeSec = 10;
+  bool liveMode = 11;
+  uint64 syncBlockLimit = 12;
+}
+
+message MsgInitChainConfigResponse {
+  string chainConfigIndex = 1;
+}
+
+message MsgRemoveProofOperator {
+  string creator = 1;
+  int32 chainId = 2;
+  string operatorAddress = 3;
+  string proofType = 4;
+}
+
+message MsgRemoveProofOperatorResponse {
+  string operatorIndex = 1;
+}
+
+message MsgRemoveProofSequencer {
+  string creator = 1;
+  int32 chainId = 2;
+  string sequencerAddress = 3;
+  string proofType = 4;
+}
+
+message MsgRemoveProofSequencerResponse {
+  string sequencerIndex = 1;
+}
+
+message MsgRemoveProofValidator {
+  string creator = 1;
+  int32 chainId = 2;
+  string validatorAddress = 3;
+  string proofType = 4;
+}
+
+message MsgRemoveProofValidatorResponse {
+  string validatorIndex = 1;
+}
+
+message MsgUpdateChainProofConfig {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofType = 3;
+  int32 quorumReq = 4;
+  string rewardAlloc = 5;
+  string minStakeReq = 6;
+  int32 minSubmissionsReq = 7;
+  string sessionTimeSec = 8;
+  bool liveMode = 9;
+}
+
+message MsgUpdateChainProofConfigResponse {
+  string chainConfigIndex = 1;
+}
+
+message MsgUpdateChainSyncConfig {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofType = 3;
+  string srcBlockTimeSec = 4;
+  string snkBlockTimeSec = 5;
+  uint64 syncBlockLimit = 6;
+  uint64 syncLagLimit = 7;
+  int32 bridgeTxDayFreq = 8;
+}
+
+message MsgUpdateChainSyncConfigResponse {
+  string chainConfigIndex = 1;
+}
+
+message MsgEnableProofValidator {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofType = 3;
+  int32 validatorId = 4;
+}
+
+message MsgEnableProofValidatorResponse {
+  string validatorIndex = 1;
+  bool validatorEnabled = 2;
+}
+
+message MsgDisableProofValidator {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofType = 3;
+  int32 validatorId = 4;
+}
+
+message MsgDisableProofValidatorResponse {
+  int32 validatorIndex = 1;
+  bool validatorDisabled = 2;
+}
+
+message MsgAssignOperatorValidator {
+  string creator = 1;
+  int32 chainId = 2;
+  string proofType = 3;
+  string validatorAddress = 4;
+  string operatorAddress = 5;
+}
+
+message MsgAssignOperatorValidatorResponse {
+  int32 validatorIndex = 1;
+  int32 operatorIndex = 2;
+}
+
+// this line is used by starport scaffolding # proto/tx/message

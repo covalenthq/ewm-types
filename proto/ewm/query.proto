@@ -1,0 +1,156 @@
+syntax = "proto3";
+package covalenthq.ewm.ewm;
+
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "ewm/params.proto";
+import "ewm/system_info.proto";
+import "ewm/live_proof_session.proto";
+import "ewm/stored_chain_role.proto";
+import "ewm/stored_chain_config.proto";
+import "ewm/stored_proof_session.proto";
+// this line is used by starport scaffolding # 1
+
+option go_package = "github.com/covalenthq/ewm/x/ewm/types";
+
+// Query defines the gRPC querier service.
+service Query {
+  // Parameters queries the parameters of the module.
+  rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
+    option (google.api.http).get = "/covalenthq/ewm/ewm/params";
+  }
+  // Queries a SystemInfo by index.
+	rpc SystemInfo(QueryGetSystemInfoRequest) returns (QueryGetSystemInfoResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/system_info";
+	}
+// Queries a LiveProofSession by index.
+	rpc LiveProofSession(QueryGetLiveProofSessionRequest) returns (QueryGetLiveProofSessionResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/live_proof_session/{index}";
+	}
+
+	// Queries a list of LiveProofSession items.
+	rpc LiveProofSessionAll(QueryAllLiveProofSessionRequest) returns (QueryAllLiveProofSessionResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/live_proof_session";
+	}
+
+// Queries a StoredChainRole by index.
+	rpc StoredChainRole(QueryGetStoredChainRoleRequest) returns (QueryGetStoredChainRoleResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/stored_chain_role/{index}";
+	}
+
+	// Queries a list of StoredChainRole items.
+	rpc StoredChainRoleAll(QueryAllStoredChainRoleRequest) returns (QueryAllStoredChainRoleResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/stored_chain_role";
+	}
+
+// Queries a StoredChainConfig by index.
+	rpc StoredChainConfig(QueryGetStoredChainConfigRequest) returns (QueryGetStoredChainConfigResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/stored_chain_config/{index}";
+	}
+
+	// Queries a list of StoredChainConfig items.
+	rpc StoredChainConfigAll(QueryAllStoredChainConfigRequest) returns (QueryAllStoredChainConfigResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/stored_chain_config";
+	}
+
+// Queries a StoredProofSession by index.
+	rpc StoredProofSession(QueryGetStoredProofSessionRequest) returns (QueryGetStoredProofSessionResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/stored_proof_session/{index}";
+	}
+
+	// Queries a list of StoredProofSession items.
+	rpc StoredProofSessionAll(QueryAllStoredProofSessionRequest) returns (QueryAllStoredProofSessionResponse) {
+		option (google.api.http).get = "/covalenthq/ewm/ewm/stored_proof_session";
+	}
+
+// this line is used by starport scaffolding # 2
+}
+
+// QueryParamsRequest is request type for the Query/Params RPC method.
+message QueryParamsRequest {}
+
+// QueryParamsResponse is response type for the Query/Params RPC method.
+message QueryParamsResponse {
+  // params holds all the parameters of this module.
+  Params params = 1 [(gogoproto.nullable) = false];
+}
+
+message QueryGetSystemInfoRequest {}
+
+message QueryGetSystemInfoResponse {
+	SystemInfo SystemInfo = 1 [(gogoproto.nullable) = false];
+}
+message QueryGetLiveProofSessionRequest {
+	  string index = 1;
+
+}
+
+message QueryGetLiveProofSessionResponse {
+	LiveProofSession liveProofSession = 1 [(gogoproto.nullable) = false];
+}
+
+message QueryAllLiveProofSessionRequest {
+	cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+message QueryAllLiveProofSessionResponse {
+	repeated LiveProofSession liveProofSession = 1 [(gogoproto.nullable) = false];
+	cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+
+message QueryGetStoredChainRoleRequest {
+	  string index = 1;
+
+}
+
+message QueryGetStoredChainRoleResponse {
+	StoredChainRole storedChainRole = 1 [(gogoproto.nullable) = false];
+}
+
+message QueryAllStoredChainRoleRequest {
+	cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+message QueryAllStoredChainRoleResponse {
+	repeated StoredChainRole storedChainRole = 1 [(gogoproto.nullable) = false];
+	cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+
+message QueryGetStoredChainConfigRequest {
+	  string index = 1;
+
+}
+
+message QueryGetStoredChainConfigResponse {
+	StoredChainConfig storedChainConfig = 1 [(gogoproto.nullable) = false];
+}
+
+message QueryAllStoredChainConfigRequest {
+	cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+message QueryAllStoredChainConfigResponse {
+	repeated StoredChainConfig storedChainConfig = 1 [(gogoproto.nullable) = false];
+	cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+
+message QueryGetStoredProofSessionRequest {
+	  string index = 1;
+
+}
+
+message QueryGetStoredProofSessionResponse {
+	StoredProofSession storedProofSession = 1 [(gogoproto.nullable) = false];
+}
+
+message QueryAllStoredProofSessionRequest {
+	cosmos.base.query.v1beta1.PageRequest pagination = 1;
+}
+
+message QueryAllStoredProofSessionResponse {
+	repeated StoredProofSession storedProofSession = 1 [(gogoproto.nullable) = false];
+	cosmos.base.query.v1beta1.PageResponse pagination = 2;
+}
+
+// this line is used by starport scaffolding # 3
