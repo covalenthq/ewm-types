@@ -39,7 +39,29 @@ At a very high level, the choice to pick Cosmos was due to its ability to provid
 
 ## 1. Introduction
 
-The EWM (Ethereum Wayback Machine) Proofchain is a specialized blockchain designed to handle and verify proofs related to Ethereum and other blockchain networks. To interact with an ewm-proofchain node, you need to understand and utilize various types defined in the system. This document provides an overview of these types and their usage.
+Decentralized applications built with smart contracts are inherently capped in performance by the underlying environment. For a DApp to optimize its performance, it should be built as an application-specific blockchain. This approach allows for the choice of a novel consensus engine such as CometBFT. Additionally, an application-specific blockchain does not compete with others for computation and storage. This contrasts with non-sharded virtual machine blockchains where smart contracts compete for block space, i.e., computation and storage. The virtual machine is the biggest throughput bottleneck in the state-machine replication process, significantly increasing the computational complexity of processing data.
+
+```mermaid
+graph TD
+    A[Transaction relayed from the full-node's CometBFT engine to the node's application via DeliverTx] --> B[ewmd]
+    B --> C[Using baseapp's methods: Decode the Tx, extract and route the messages]
+    C --> D[Message routed to the correct module to be processed]
+    D --> E[AUTH MODULE]
+    D --> F[BANK MODULE]
+    D --> G[STAKING MODULE]
+    D --> H[EWMD MODULE]
+    E --> I[Handle message, Update state]
+    F --> J[Handle message, Update state]
+    G --> K[Handle message, Update state]
+    H --> L[Handle message, Update state]
+    I --> M[Return result to CometBFT `0=Ok, 1=Err`]
+    J --> M
+    K --> M
+    L --> M
+```
+
+Hence the EWM (Ethereum Wayback Machine) Proofchain is a specialized blockchain designed to handle and verify proofs related to Ethereum and other blockchain networks. To interact with an ewm-proofchain node, you need to understand and utilize various types defined in the system. This document provides an overview of these types and their usage.
+
 
 ## 2. Core Types
 
